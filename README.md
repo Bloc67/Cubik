@@ -1,0 +1,2 @@
+# Cubik
+Theme for Elkarte
