@@ -55,10 +55,8 @@ function template_html_above()
 	{
 		echo '
 	<meta';
-
 		foreach ($meta_tag as $meta_key => $meta_value)
 			echo ' ', $meta_key, '="', $meta_value, '"';
-
 		echo '>';
 	}
 
