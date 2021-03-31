@@ -1,0 +1,612 @@
+/*******************************
+             Reset
+*******************************/
+
+
+*,*:before,*:after {  box-sizing: inherit; }
+html {  box-sizing: border-box; }
+/* iPad Input Shadows */
+input[type="text"], input[type="email"], input[type="search"], input[type="password"] {   -webkit-appearance: none;   -moz-appearance: none; /* mobile firefox too! */ }
+html {   height: 100vh;	font-family: "Roboto", sans-serif;   -ms-text-size-adjust: 100%;   -webkit-text-size-adjust: 100%;background: #222; }
+body {  margin: 0; min-height: 100vh;}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {   display: block; }
+audio, canvas, progress, video {   display: inline-block; /* 1 */   vertical-align: baseline;    /* 2 */ }
+audio:not([controls]) {   display: none;   height: 0; }
+[hidden], template {   display: none; }
+a {   background: transparent; }
+a:active, a:hover {   outline: 0; }
+abbr[title] {   border-bottom: 1px dotted; }
+b, strong {   font-weight: bold; }
+dfn {   font-style: italic; }
+mark {   background: #ff0;   color: #000; }
+small {   font-size: 80%; }
+sub, sup {   font-size: 75%;   line-height: 0;   position: relative;   vertical-align: baseline; }
+sup {   top: -0.5em; }
+sub {   bottom: -0.25em; }
+
+img {   border: 0; }
+svg:not(:root) {   overflow: hidden; }
+figure {   margin: 1em 40px; }
+hr {   box-sizing: content-box;   height: 0; }
+pre {   overflow: auto; }
+code, kbd, pre, samp {   font-family: monospace, monospace;   font-size: 1em; }
+button, input, optgroup, select, textarea {   color: inherit;   font: inherit;   margin: 0; }
+button {   overflow: visible; }
+button, select {   text-transform: none; }
+button, html input[type="button"], input[type="reset"], input[type="submit"] {   -webkit-appearance: button;   cursor: pointer; }
+button[disabled], html input[disabled] {   cursor: default; }
+button::-moz-focus-inner, input::-moz-focus-inner {   border: 0;   padding: 0; }
+input {   line-height: normal; }
+input[type="checkbox"], input[type="radio"] {   box-sizing: border-box;   padding: 0; }
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {   height: auto; }
+input[type="search"] {   -webkit-appearance: textfield;   box-sizing: content-box; }
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {   -webkit-appearance: none; }
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {   border: 0;   padding: 0; }
+textarea {   overflow: auto; }
+optgroup {   font-weight: bold; }
+
+table {   border-collapse: collapse;   border-spacing: 0; }
+td, th {   padding: 0; }
+a { text-decoration: none; }
+a:hover { color: #849CB3; }
+
+/*******************************
+          Highlighting
+*******************************/
+/* Site */
+::-webkit-selection {   background-color: #CCE2FF;   color: rgba(0, 0, 0, 0.87); }
+::-moz-selection {   background-color: #CCE2FF;   color: rgba(0, 0, 0, 0.87); }
+::selection {   background-color: #CCE2FF;   color: rgba(0, 0, 0, 0.87); }
+/* Form */
+textarea::-webkit-selection, input::-webkit-selection {   background-color: rgba(100, 100, 100, 0.4);   color: rgba(0, 0, 0, 0.87); }
+textarea::-moz-selection, input::-moz-selection {   background-color: rgba(100, 100, 100, 0.4);   color: rgba(0, 0, 0, 0.87); }
+textarea::selection, input::selection {   background-color: rgba(100, 100, 100, 0.4);   color: rgba(0, 0, 0, 0.87); }
+
+
+/* -------------------------------------------------------
+ *	$GENERAL
+ * -------------------------------------------------------
+ */
+html { background: #525252; min-height: 100vh;}
+body {
+    background: #fdfdfd;
+    color: #444;
+    line-height: 1.6rem;
+	min-height: 100vh;
+}
+a {color: #567; }
+a:hover {color: #000;}
+
+table {	empty-cells: show;}
+.separator {
+}
+ul, ol { list-style: none; }
+a img { border: 0; }
+
+/* The following is necessary. */
+textarea, .editor {
+}
+.sceditor-container {margin: 0 0 6px 0;}
+
+input, .input_text, button, select {
+}
+input, button, select, textarea, .editor {
+}
+select {
+}
+select option {
+}
+select[size],
+input[type="file"] {
+}
+
+.select_multiple {
+	min-height: 10em;
+	height: auto;
+}
+.openid_login {	
+}
+
+/* Use new class that is defined to suit, and with a sensible name. */
+.submitbutton {
+}
+
+.submitbutton input[type="submit"],
+.submitbutton input[type="button"] {
+}
+.new_posts, .require_approval {
+}
+.new_posts:hover {
+}
+
+
+/* bbc links wrapped in [s] */
+del .bbc_link:link, del .bbc_link:visited {	text-decoration: line-through;}
+/* bbc links wrapped in sub / sup */
+sup a.bbc_link {vertical-align: sub;}
+sub a.bbc_link {vertical-align: middle;}
+.childboards .new_posts {
+}
+hr {
+}
+em, .em {	font-style: italic;}
+.hide {	display: none;}
+.grid8 {width: 8%;}
+.grid17 {width: 17%;}
+.grid20 {width: 20%;}
+.grid25 {width: 25%;}
+.grid30 {width: 30%;}
+.grid33 {width: 33%;}
+.grid50 {width: 49.5% !important;}
+
+/* -------------------------------------------------------
+ *	$COMMON
+ * -------------------------------------------------------
+ */
+.tt {font-family: monospace;}
+.underline {text-decoration: underline;}
+.floatright {float: right;}
+.floatleft {float: left;}
+.floatcenter {margin: 0 auto;	display: block;}
+.flow_auto {overflow: auto;}
+.flow_hidden {	overflow: hidden;}
+.clear {clear: both;}
+.clear_left {clear: left;}
+.clear_right {clear: right;}
+
+.smalltext {font-size: 0.857em;}
+.largetext {font-size: 1.286em;}
+.centertext {text-align: center;}
+.righttext {text-align: right;}
+.lefttext {text-align: left;}
+.double_height {line-height: 2em;}
+.centericon {vertical-align: middle;}
+.nowrap {white-space: nowrap;}
+.wordbreak {word-break: break-all;}
+
+/* Styles for main headers. */
+.category_header, .forum_category .category_header {
+}
+/* Styles for subsection headers. @todo */
+.secondary_header {
+}
+/* Category Header icons as sprites, lots available to custom themes to use */
+.hdicon:before {
+}
+
+.cat_img_attachments:before {}
+.cat_img_buddies:before     {}
+.cat_img_config:before      {}
+.cat_img_contacts:before    {}
+.cat_img_helptopics:before  {}
+.cat_img_inbox:before       {}
+.cat_img_login:before       {}
+.cat_img_mail:before        {}
+.cat_img_moderation:before  {}
+.cat_img_plus:before        {}
+.cat_img_posts:before       {}
+.cat_img_profile:before     {}
+.cat_img_search:before      {}
+.cat_img_stats_info:before  {}
+.cat_img_topics:before      {}
+.cat_img_write:before       {}
+.cat_img_database:before    {}
+.cat_img_address:before     {}
+.cat_img_calendar:before    {}
+.cat_img_minus:before       {}
+.cat_img_star:before        {}
+.cat_img_clock:before       {}
+.cat_img_eye:before         {}
+.cat_img_piechart:before    {}
+.cat_img_talk:before        {}
+
+.collapse, .expand {}
+.content {
+}
+.highlight {font-weight: bold;}
+.additional_row { padding: 0.5rem 0;}
+.generic_menu {
+}
+.generic_list_wrapper {
+}
+/* Styles used by the auto suggest control. */
+.auto_suggest_div {
+	position: absolute;
+	z-index: 100;
+	visibility: hidden;
+	border: 1px solid;
+	border-radius: 3px;
+}
+.auto_suggest_div:focus {	outline: none !important;}
+
+/* -------------------------------------------------------
+ *	$BBC
+ * -------------------------------------------------------
+ */
+
+/* The "Quote:" and "Code:" header parts... */
+.codeheader, .quoteheader {
+}
+/* A quote, perhaps from another post. */
+.bbc_quote,
+.bbc_code {
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+}
+.bbc_code .tab {}
+.bbc_size {	line-height: 1.4em;}
+.bbc_color a {	color: inherit;}
+
+strong, .bbc_strong {color: inherit;font-weight: bold;}
+.bbc_img {	max-width: 100%;border: 0;}
+.bbc_img.floatleft { padding: 0.5rem 2rem 0.5rem 0;}
+.bbc_img.floatright {	padding: 0.5rem 0 0.5rem 2rem;}
+.bbc_img.floatcenter {	padding: 0.5rem 2rem; }
+.bbc_table {	color: inherit;	font: inherit;}
+.bbc_table td {	color: inherit;	vertical-align: top;font: inherit;	padding: 0 0.5rem;}
+.bbc_table th {	color: inherit;	font: inherit;font-weight: bold;padding: 0 0.5rem;}
+.inner > .bbc_table_container > .bbc_table,
+.messageContent > .bbc_table_container > .bbc_table {border-collapse: collapse;}
+.inner > .bbc_table_container > .bbc_table th,
+.messageContent > .bbc_table_container > .bbc_table th {text-align: center;}
+.bbc_u {	text-decoration: underline;}
+.bbc_list {	padding: 0 0 0 2rem;list-style-type: square;text-align: left;}
+/* Everything is same except HTML5 valid */
+.bbc_tt {font-family: "DejaVu Sans Mono", Monaco, "Lucida Console", "Courier New", monospace;}
+.bbc_pre {overflow: auto;	font-family: "DejaVu Sans Mono", Monaco, Consolas, monospace;}
+.bbc_footnotes {overflow: auto;	margin-top: 1rem;	padding: 0.5rem 1rem 0.5rem 0;	font-size: small;}
+div.bbc_footnotes {
+	border-top: 1px solid;
+}
+sup.bbc_footnotes, sup.bbc_footnotes a {font-weight: 700;}
+div.bbc_footnotes .meaction {display: inline-block;}
+.footnote_return {	font-size: 1.3rem;}
+/* Shorten url's inside posts. */
+a.bbc_link {
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	vertical-align: bottom;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+}
+.bbc_link:hover {	text-decoration: none;}
+.meaction:before {
+	content: "\270c";
+	font-size: 1.7rem;
+	line-height: 1rem;
+}
+.spoiler {	padding: 0.5rem; border: 1px solid;}
+.spoilerheader {
+	font-weight: bold;
+	font-size: 0.8rem;
+	cursor: pointer;
+}
+
+/* -------------------------------------------------------
+ *	$AJAX
+ * -------------------------------------------------------
+ */
+
+/* The "Loading" bar for quick edit, etc. */
+#ajax_in_progress, .ajax_infobar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	padding: 15px;
+	width: 100%;
+	text-align: center;
+	font-size: 1.571em;
+	border-bottom: 4px solid;
+}
+
+#ajax_in_progress a {	text-decoration: underline;}
+#quick_edit_body_container {	width: 90%;}
+#quick_edit_body_container .editor {	width: 100%;	margin-bottom: 10px;}
+#quick_edit_body_container .input_text {	width: 85%;}
+
+/* -------------------------------------------------------
+ *	$MAIN.
+ * -------------------------------------------------------
+ */
+
+/* The top bar. */
+#top_section {
+}
+#top_section_notice {
+}
+#password_login {
+}
+#search_form {
+}
+/* Main forum area. */
+#wrapper {
+}
+/* The user info, news, etc.*/
+#news {
+}
+/* The content section */
+#main_content_section {
+}
+/* The footer with copyright links etc. */
+#footer_section {
+}
+
+/* -------------------------------------------------------
+ *	$MENUS
+ * -------------------------------------------------------
+ */
+
+
+/* -------------------------------------------------------
+ *	$LINKTREE
+ * -------------------------------------------------------
+ */
+
+
+/* -------------------------------------------------------
+ *	$BUTTONS
+ * This section contains code for the quickbuttons (quote, quick edit, etc)
+ * and for the buttonlist class (reply, add poll, notify, etc).
+ * These classes share some styling.
+ * Declarations are amalgamated where styling is shared.
+ * -------------------------------------------------------
+ */
+
+
+
+/* The long list of sprite coordinates is much less verbose this way. */
+.quote_button:before      {}
+.remove_button:before     {}
+.modify_button:before     {}
+.approve_button:before    {}
+.restore_button:before    {}
+.split_button:before      {}
+.reply_button:before      {}
+.reply_all_button:before  {}
+.notify_button:before     {}
+.unapprove_button:before  {}
+.close_button:before      {}
+.im_reply_button:before   {}
+.details_button:before    {}
+.ignore_button:before     {}
+.report_button:before     {}
+.warn_button:before       {}
+.quotetonew_button:before {}
+.like_button:before       {}
+.unlike_button:before     {}
+.star_button:before       {}
+.quick_edit:before        {}
+.likes_button:before      {}
+
+
+/* -------------------------------------------------------
+ *	$PAGELINKS
+ * -------------------------------------------------------
+ */
+
+
+
+/* -------------------------------------------------------
+ *	$TABLES
+ * -------------------------------------------------------
+ */
+
+/* A general table class. */
+.table_grid {
+	margin: 0;
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+/* -------------------------------------------------------
+ * $SETTINGS
+ * -------------------------------------------------------
+ */
+
+/* Lists - settings use these a lot. */
+.settings {
+}
+.settings dt {
+}
+.settings dd {
+}
+
+/* -------------------------------------------------------
+ *	$BOARDS
+ * -------------------------------------------------------
+ */
+
+
+/* -------------------------------------------------------
+ *	$TOPICS
+ * -------------------------------------------------------
+ */
+
+
+/* -------------------------------------------------------
+ *	$EDITOR
+ * -------------------------------------------------------
+ */
+
+
+/* -------------------------------------------------------
+ *	$DRAG-N-DROP
+ * -------------------------------------------------------
+ */
+.drop_area {
+	display: none;
+	padding: 1em 0;
+	text-align: center;
+	font-weight: normal;
+	font-size: 1.643em;
+	opacity: 0.6;
+	border: dashed 1px;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.drop_area_fileselect {
+	position: absolute;
+	opacity: 0.0001;
+	cursor: pointer;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.drop_area_fileselect_text {
+	padding: 0 4px;
+	white-space: nowrap;
+	position: relative;
+}
+
+.drop_area_fileselect_text input {
+	overflow-y: hidden;
+}
+
+.drop_area .mobile {
+	display: none;
+}
+
+
+/* -------------------------------------------------------
+ *	$MODERATE
+ * -------------------------------------------------------
+ */
+
+
+
+/* -------------------------------------------------------
+ *	$PROFILE
+ * -------------------------------------------------------
+ */
+
+/* -------------------------------------------------------
+ * $PERSONAL
+ * -------------------------------------------------------
+ */
+
+
+/* -------------------------------------------------------
+ * $CALENDAR
+ * -------------------------------------------------------
+ */
+
+
+/* -------------------------------------------------------
+ * MENTIONS
+ * -------------------------------------------------------
+ */
+
+/* -------------------------------------------------------
+ * $STATISTICS
+ * -------------------------------------------------------
+ */
+
+/* -------------------------------------------------------
+ *	$HELP
+ * -------------------------------------------------------
+ */
+
+
+/* -------------------------------------------------------
+ *	$SEARCH
+ * -------------------------------------------------------
+ */
+
+
+/* -------------------------------------------------------
+ *	$MEMBERLIST
+ * -------------------------------------------------------
+ */
+
+/* -------------------------------------------------------
+ *	$LOGIN
+ * -------------------------------------------------------
+ */
+
+
+/* -------------------------------------------------------
+ *	$BOXES
+ * -------------------------------------------------------
+ */
+
+.well, .roundframe {
+}
+/* Lotsa boxes. */
+.description, .information, .warningbox, .successbox, .infobox, .errorbox {
+}
+.border_error {
+	border: 1px solid !important;
+}
+.selected {
+	font-weight: bold;
+}
+/* Styles for (fatal) errors. */
+#fatal_error {
+}
+.ban_cannot_post {
+}
+
+/* -------------------------------------------------------
+ *	$PROGRESS
+ * -------------------------------------------------------
+ */
+
+/* Styles for the progress bar */
+.progress_bar {
+}
+
+.full_bar {
+}
+.green_percent, .blue_percent {
+}
+.green_percent_compact, .blue_percent_compact, .full_bar_compact, .progress_bar_compact {
+}
+.progress_bar_compact {
+}
+.full_bar_compact {
+}
+.loading {
+}
+
+
+/* -------------------------------------------------------
+ *	$LIKE STATS
+ * -------------------------------------------------------
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------
+ *	$MEDIA
+ * -------------------------------------------------------
+
+/* Styles for print media. */
+@media print {
+}
+
+
